@@ -7,8 +7,8 @@
 --%>
 <%@ page contentType="text/html; charset=UTF-8" language="java" %>
 <%@ page import="com.market.Product" %>
+<%@ page import="com.market.ProductRepository" %>
 
-<jsp:useBean id="productDAO" class="com.market.ProductRepository" scope="session" />
 <html>
 <head>
     <title>Title</title>
@@ -21,7 +21,8 @@
 </h1> </div> </div>
 <%
     String id = request.getParameter("id");
-    Product prod = productDAO.getProductById(id);
+    ProductRepository dao = ProductRepository.getInstance();
+    Product prod = dao.getProductById(id);
 %>
 <div class="container">
     <div class="row">

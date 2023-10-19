@@ -4,6 +4,13 @@ import java.util.ArrayList;
 
 public class ProductRepository {
     private ArrayList<Product> listOfProducts = new ArrayList<Product>();
+    private static ProductRepository instance = new ProductRepository();
+    public static ProductRepository getInstance() {
+        return instance;
+    }
+    public void addProduct (Product product) {
+        listOfProducts.add(product);
+    }
 
     public ProductRepository() {
 

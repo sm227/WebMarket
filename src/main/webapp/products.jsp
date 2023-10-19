@@ -10,7 +10,9 @@
 <%@ page import="com.market.Product" %>
 <%@ page import="java.lang.reflect.Array" %>
 <%@ page import="java.beans.PropertyDescriptor" %>
-<jsp:useBean id="productDAO" class="com.market.ProductRepository" scope="session" />
+<%@ page import="com.market.ProductRepository" %>
+<%@ page import="java.util.Arrays" %>
+
 <html>
 <head>
     <%@include file="header.jsp"%>
@@ -20,7 +22,9 @@
 <%@ include file="menu.jsp"%>
 <div class="jumbotron"><div class="container"><h1 class="display-3">상품 목록</h1> </div> </div>
 <%
-    ArrayList<Product> listOfProducts = productDAO.getAllProducts();
+    ProductRepository dao = ProductRepository.getInstance();
+
+    ArrayList<Product> listOfProducts = dao.getAllProducts();
 %>
 <div class="container">
     <div class="row" align="center">
