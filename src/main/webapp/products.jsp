@@ -34,6 +34,7 @@
 
         %>
         <div class="col-md-4">
+            <img src = "./images/<%=p.getFilename() %>" style="width : 100%">
             <h3><%=p.getPname() %></h3>
             <p><%=p.getDescription() %></p>
             <p><%= p.getUnitPrice() %>원</p>

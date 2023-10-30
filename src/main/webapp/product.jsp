@@ -26,6 +26,9 @@
 %>
 <div class="container">
     <div class="row">
+        <div class="col-md-5">
+            <img src = "./images/<%= prod.getFilename() %>" style="width:100%">
+        </div>
         <div class="col-md-6">
             <h3><%=prod.getPname() %></h3>
             <p><%=prod.getDescription() %></p>

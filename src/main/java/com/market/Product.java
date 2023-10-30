@@ -16,6 +16,10 @@ public class Product implements Serializable {
     private long unitsInStock;//재고수
 
     private String condition;//신상품 or 중고품 or 재생품
+    private String filename;
+
+
+
 
     public Product() {
         super();
@@ -29,6 +33,15 @@ public class Product implements Serializable {
 
 
     //getter, setter 영역
+
+
+    public String getFilename() {
+        return filename;
+    }
+
+    public void setFilename(String filename) {
+        this.filename = filename;
+    }
 
     public String getProductId() {
         return productId;

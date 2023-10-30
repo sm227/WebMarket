@@ -15,7 +15,7 @@ public class ProductRepository {
     public ProductRepository() {
 
         Product phone = new Product("P0001",
-                "iPhome 14 Pro", 1500000);
+                "iPhone 14 Pro", 1500000);
         phone.setDescription("15.5cm 전면 화면 OLED 디스플레이, 2556*1179 픽셀 해상도 ");
         phone.setCategory("Phone");
         phone.setManufacturer("Apple");
@@ -36,6 +36,10 @@ public class ProductRepository {
         listOfProducts.add(phone);
         listOfProducts.add(notebook);
         listOfProducts.add(tablet);
+
+        phone.setFilename("P0001.png");
+        notebook.setFilename("P0002.png");
+        tablet.setFilename("P0003.png");
     }
 
     public ArrayList<Product> getAllProducts() {
