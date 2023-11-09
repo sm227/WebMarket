@@ -17,6 +17,8 @@ public class Product implements Serializable {
 
     private String condition;//신상품 or 중고품 or 재생품
     private String filename;
+    
+    private int quantity;
 
 
 
@@ -106,4 +108,14 @@ public class Product implements Serializable {
     public void setCondition(String condition) {
         this.condition = condition;
     }
+
+	public int getQuantity() {
+		return quantity;
+	}
+
+	public void setQuantity(int quantity) {
+		this.quantity = quantity;
+	}
+    
+    
 }

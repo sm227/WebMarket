@@ -28,3 +28,13 @@ function checkAddProduct() {
     }
     $('#newProduct').submit();
 }
+
+function check(regExp, e,
+msg){
+if (regExp.test(e.val()) ) {
+return true;
+}
+alert(msg);
+e.focus();
+return false;
+}
