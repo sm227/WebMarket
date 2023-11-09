@@ -5,6 +5,10 @@
   Time: 오후 2:48
   To change this template use File | Settings | File Templates.
 --%>
+<%@ page import="com.oreilly.servlet.*" %>
+<%@ page import="com.oreilly.servlet.multipart.*" %>
+<%@ page import="java.util.*" %>
+<%@page import="com.oreilly.servlet.multipart.DefaultFileRenamePolicy"%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ page import="com.market.ProductRepository" %>
 <%@ page import="com.market.Product" %>
@@ -20,6 +24,15 @@
     String category = request.getParameter("category");
     String unitsInStock = request.getParameter("unitsInStock");
     String condition = request.getParameter("condition");
+    
+    String filename = "";
+    String realFolder = "/Users/hamseungmin/Market";
+    int maxSize = 10 * 1024 * 1024;
+    String encType = "utf-8";
+    MultipartRequest multi =
+    new MultipartRequest(request, realFolder, maxSize, encType, new DefaultFileRenamePolicy());
+    
+    
     int price;
     if (unitPrice.isEmpty()) {
         price = 0;
