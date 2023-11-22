@@ -8,6 +8,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
+
     <title>Title</title>
   <%
     String name = request.getParameter("p_name");
@@ -16,6 +17,9 @@
     String [] hobby = request.getParameterValues("checkHobby");
     String city = request.getParameter("city");
     String comment = request.getParameter("comment");
+
+
+
   %>
 </head>
 <body>
