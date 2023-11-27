@@ -1,0 +1,1 @@
+alter table member add phone varchar(100)
