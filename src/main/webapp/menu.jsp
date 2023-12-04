@@ -19,7 +19,10 @@
           <a class="nav-link" href="./products.jsp">Products</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="./addProducts.jsp">Add Products</a>
+          <a class="nav-link" href="./addProduct.jsp">Add Products</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./editProducts.jsp">Edit Products</a>
         </li>
       </ul>
     </div>
