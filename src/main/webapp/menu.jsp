@@ -11,8 +11,20 @@
   <div class="container">
     <div class="navbar-header">
       <a class="navbar-brand" href="index.jsp">Home</a>
-      <a class="navbar-brand" href="products.jsp">Product</a>
-      <a class="navbar-brand" href="addProduct.jsp">Add Product</a>
+
+    </div>
+    <div>
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="./products.jsp">Products</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./addProduct.jsp">Add Products</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./editProducts.jsp">Edit Products</a>
+        </li>
+      </ul>
     </div>
   </div>
 </nav>
